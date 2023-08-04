@@ -58,7 +58,7 @@ task run(type: JavaExec) {
 
         def configFile = System.getenv("CONFIG")
         if(null == configFile || !file(configFile).exists()) {
-            println("CONFIG file not provided, or does not exist")
+           println("CONFIG file not provided, or does not exist")
             assert file(configFile).exists()
         }
 
